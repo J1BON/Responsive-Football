@@ -6,6 +6,43 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 0px 30px;
+    align-items: center;
+}
+
+.nav-items ul li {
+    padding: 10px;
+    list-style: none;
+    display: inline;
+    margin-left: 36px;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.log-in a {
+    text-decoration: none;
+    color: #ffff;
+    background: #E02C6D;
+    padding: 10px 24px;
+}
+
+.log-in a:hover {
+    background: #fff;
+    color: black;
+}
+
+.log-in a span {
+    margin-right: 8px;
+}
+
 /* Header-part */
 header {
     background-color: #2D25A0;
@@ -35,6 +72,11 @@ header {
     color: #ffff;
     background-color: #E02C6D;
     padding: 10px 24px;
+}
+
+.banner-title a:hover {
+    background: #ffff;
+    color: black;
 }
 
 .banner-title a span,
