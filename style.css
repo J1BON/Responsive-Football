@@ -4,6 +4,8 @@ body {
     width: 1440px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -296,4 +298,340 @@ form p {
     font-size: 25px;
     color: gray;
     border-radius: 50%;
+}
+
+
+/* Media Query For Mobile */
+
+@media only screen and (max-width:688px) {
+    body {
+        width: 360px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    nav {
+        display: none;
+    }
+
+    /* banner-part */
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .banner-title {
+        padding: 16px;
+    }
+
+    .banner-title h1 {
+        font-size: 36px;
+    }
+
+    .banner-img {
+        padding: 50px 15px;
+    }
+
+    .banner-img img {
+        width: 329px;
+        height: 259.17px;
+    }
+
+    /* player-section */
+
+    .players-section {
+        width: 95%;
+        margin: 70px 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+    }
+
+    .player {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        width: 315px;
+        height: 474px;
+    }
+
+
+    /* Highlights-section */
+
+    .hightligts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highligts-title {
+        padding: 10px 30px 30px 15px;
+    }
+
+    .highligts-title h1 {
+        font-size: 30px;
+    }
+
+    .highligts-title p {
+        width: 330px;
+        font-size: 16px;
+    }
+
+    .highligts-cover img {
+        width: 328px;
+        height: 248px;
+        padding: 16px;
+    }
+
+    /* Upcoming-match Section */
+
+    .upcoming-match {
+        margin-top: 47px;
+        padding: 10px;
+    }
+
+    .upcoming-match h1 {
+        font-size: 30px;
+    }
+
+    .upcoming-match h3 {
+        margin-top: 0;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .match {
+        display: flex;
+        justify-content: space-between;
+        overflow: none;
+        margin-bottom: 0;
+    }
+
+    .club {
+        padding: 0px;
+        width: 25%;
+    }
+
+    .vs {
+        width: 40%;
+    }
+
+    .club img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .vs img {
+        height: 150px;
+        width: 100%;
+    }
+
+    /* subsribe-section */
+
+    .subs-title h1 {
+        font-size: 30px;
+    }
+
+    .subs-title h3 {
+        font-size: 16px;
+    }
+
+    .subs-item {
+        padding: 1% 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        box-shadow: none;
+        padding: 0px;
+    }
+
+    form input {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        margin: 20px;
+        border: 1px solid gray;
+    }
+
+    #subs-btn {
+        display: flex;
+        justify-items: center;
+        padding: 5;
+        width: 100px;
+        font-size: 15px;
+        color: black;
+        border: .5px solid gray;
+    }
+
+
+    /* Footert */
+
+    footer {
+        margin-top: 40px;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-logo img {
+        width: 300px;
+        height: 63px;
+    }
+
+    .social-icon {
+        text-align: center;
+    }
+
+
+    .social-icon a i {
+        padding: 10px 10px;
+        font-size: 25px;
+        color: gray;
+        border-radius: 50%;
+    }
+
+}
+
+/* Media Query for Tablet */
+
+@media only screen and (min-width: 688px) and (max-width:922px) {
+    body {
+        width: 768px;
+        overflow-x: hidden;
+    }
+
+    /* Header-section */
+
+    /* Navbar */
+
+    nav {
+        padding: 20px 10px 0px 0px;
+        margin-bottom: 40px;
+    }
+
+    .nav-items ul li {
+        padding: 5px;
+        margin-left: 5px;
+    }
+
+    .log-in a {
+        padding: 10px 14px;
+    }
+
+    /* Banner-Part */
+
+    .banner {
+        display: flex;
+    }
+
+    .half-width {
+        width: 50%;
+    }
+
+    .banner-title {
+        padding: 20px;
+    }
+
+    .banner-title h1 {
+        font-size: 40px;
+    }
+
+    .banner-img {
+        padding: 40px;
+    }
+
+    .banner-img img {
+        transition: transform .5s;
+        height: 350px;
+        width: 400px;
+    }
+
+    .banner-img img:hover {
+        transform: scale(1.2, 1.2);
+        transition: .5s linear;
+    }
+
+    /* Main */
+
+    /* player-section */
+
+    .players-section {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player {
+        background: #FFFFFF;
+        padding: 15px 15px 33px 15px;
+        width: 315px;
+        height: 474px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    /* Highligts-Section */
+
+    .hightligts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .half-width {
+        width: 80%;
+    }
+
+    .highligts-title {
+        padding: 60px 30px 10px 100px;
+    }
+
+    .highligts-title h1 {
+        font-size: 40px;
+    }
+
+    /* upcoming-match section */
+
+    .upcoming-match {
+        padding: 5px;
+    }
+
+    .upcoming-match h1 {
+        font-size: 40px;
+    }
+
+    .upcoming-match h3 {
+        font-size: 18px;
+
+    }
+
+    /* Subscribe section */
+
+    .subs-title h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .subs-title h3 {
+        font-size: 16px;
+    }
+
+    .subs-item {
+        padding: 2% 12%;
+        display: flex;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 30px;
+    }
+
 }
